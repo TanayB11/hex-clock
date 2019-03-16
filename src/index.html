@@ -1,0 +1,42 @@
+<html>
+  <head>
+
+    <title>Hex Clock</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open-Sans"> -->
+    <style>
+      .center{
+        margin: auto;
+    	  position: absolute;
+    	  top: 50%; left: 50%;
+    	  -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+      }
+      #hex-text, #new-line{
+        color: #ffffff;
+        text-align: center;
+        font-family: 'Courier New';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 400%;
+        border:none;
+        background-color: inherit;
+        width: 1000;
+      }
+
+    </style>
+
+    <script data-main = "clock.js" src = "require.js"></script>
+  </head>
+
+  <body id = "background">
+
+    <div class = "center">
+      <button id = "hex-text"></button>
+      <p id = "new-line"></p>
+    </div>
+
+    <script src = "clock.js"></script>
+
+  </body>
+</html>
