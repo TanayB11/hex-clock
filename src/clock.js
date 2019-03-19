@@ -56,10 +56,11 @@ function getTime(){ // Updates time
     shownSecond = second + ' seconds';
   }
   else{
+    formatID = prevFormatID;
     shownSecond = '';
   }
 
   displayTime(color, shownTime, shownSecond);
 }
 
-setInterval(getTime,500); // 500ms update for accuracy
+setInterval(getTime, 500); // 500ms update for accuracy
