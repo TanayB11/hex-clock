@@ -56,7 +56,6 @@ function getTime(){ // Updates time
     shownSecond = second + ' seconds';
   }
   else{
-    formatID = prevFormatID;
     shownSecond = '';
   }
 
