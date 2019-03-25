@@ -45,8 +45,13 @@ function getTime(){ // Updates time
     else if (hour != 0){
       shownTime = hour%12 + ':' + parseInt(minute, 10) + ':' + second + ' am';
     }
-    else{
-      shownTime = '12:' + parseInt(minute, 10) + ':' + second + ' am'; // Verify working
+    if (hour%12 == 0){
+      if (hour == 12){
+        shownTime = '12:' + parseInt(minute, 10) + ':' + second + ' pm';
+      } // Verify working
+      else{
+        shownTime = '12:' + parseInt(minute, 10) + ':' + second + ' am';
+      } // Verify working
     }
     shownSecond = '';
   }
